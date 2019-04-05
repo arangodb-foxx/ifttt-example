@@ -1,4 +1,5 @@
 "use strict";
+const joi = require("joi");
 const { context } = require("@arangodb/locals");
 const createRouter = require("@arangodb/foxx/router");
 const router = createRouter();
