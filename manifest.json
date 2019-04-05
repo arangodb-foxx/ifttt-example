@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json.schemastore.org/foxx-manifest",
+  "thumbnail": "ifttt.png",
+  "name": "ifttt-example",
+  "version": "0.0.1",
+  "engines": {
+    "arangodb": "^3.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "setup": "scripts/setup.js"
+  },
+  "configuration": {
+    "username": {
+      "type": "string",
+      "default": "ifttt",
+      "description": "Username IFTTT webhook will authenticate with.",
+      "required": false
+    },
+    "password": {
+      "type": "string",
+      "default": "secret",
+      "description": "Password IFTTT webhook will authenticate with.",
+      "required": false
+    }
+  }
+}
